@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {text-decoration: none;}
+
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    background-color: hsl(217, 100%, 97%);
+}
+
+.container{
+    max-width: 900px;
+    margin-inline: auto;
+    padding: 16px;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    border-radius: 20px;
+    
+    
+}
+
+
+.left-side{
+    background-image: url("../img/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 200px;
+}
+
+.left-side-first{
+    display: flex;
+    gap: 40px;
+    padding-top: 25px;
+
+    a{
+        padding: 17px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid white;
+        color: #fff;
+        font-weight: 700;
+        font-size: 25px;
+        
+    }
+     
+    
+    h6{
+        color: lightgray;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    h4{
+        color: #fff;
+        padding-top: 5px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+
+.left-side-first-text{
+    padding-top: 8px;
+}
+
+
+.left-side-first a:active{
+    background-color: rgb(193, 219, 227);
+    color: black;
+}
+
+.right-side{
+
+    padding-right: 50px;
+
+    h4{
+        font-weight: 600;
+        font-size: 30px;
+        color: hsl(213, 96%, 18%);
+    }
+
+    h6{
+        font-weight: 400;
+        font-size: 13px;
+        color: hsl(227, 5%, 67%);
+        margin-top: 26px;
+
+    }
+
+    input{
+        width: 100%;
+        margin-top : 20px;
+        padding: 10px;
+        border: 1px solid lightgray;
+        border-radius: 7px;
+    }
+}
+
+.right-side input:active{
+
+    border-color: blue
+}
+.form-1-text{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+
+    p{
+        font-weight: 500;
+        font-size: 12px;
+        color: hsl(213, 96%, 18%);
+    }
+
+    h5{
+        display: none;
+        font-weight: 600;
+        font-size: 12px;
+        color: red;
+
+    }
+}
+
+
+.next-btn{
+    display: flex;
+    justify-content: right;
+    margin-top: 110px;
+
+}
+.next-btn a{
+    padding: 15px 20px;
+    color: #fff;
+    background-color:hsl(213, 96%, 18%);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+}
+

@@ -97,7 +97,7 @@ body{
 
     }
 
-    input{
+    input[type="text"]{
         width: 100%;
         margin-top : 20px;
         padding: 10px;
@@ -147,3 +147,170 @@ body{
     font-size: 15px;
 }
 
+
+/* select your plan */
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 40px;
+    gap: 10px;
+    
+}
+.box-one{
+    padding: 15px 0px 15px 10px;
+    border: 1px solid hsl(229, 23%, 86%);
+    border-radius: 10px;
+}
+.box-one-text{
+    margin-top: 30px;
+
+    h4{
+    font-size: 15px;
+    }
+
+    p{
+        color: hsl(231, 11%, 63%);
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    h6{
+        display: none;
+        margin-top: 5px;
+        color: hsl(213, 96%, 18%);
+        font-weight: 500;
+
+    }
+
+
+}
+
+.monthly-yearly-input{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0px 10px 0px;
+    background-color: hsl(228, 38%, 97%);
+    border-radius: 5px;
+
+    h3{
+        font-size: 14px;
+        color: hsl(231, 11%, 63%);
+
+    }
+
+    h4{
+
+        font-size: 14px;
+    }
+}
+
+
+
+input[type="range"]{
+    width: 48px;
+    height: 24px;
+    appearance: none; 
+    border-radius: 13px;
+    color: hsl(213, 96%, 18%);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 0px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px; 
+    border-radius: 50%;
+    cursor: pointer;
+    background:#5964E0;
+
+}
+
+
+/* add-ons  */
+
+
+.right-side-hero-first{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 25px 15px ;
+    border: 1px solid hsl(229, 23%, 86%);
+    border-radius: 12px;
+
+
+    h4{
+        font-size: 16px;
+    }
+
+    h6{
+        margin: 0;
+    }
+
+    h5{
+
+        color: rgb(140, 25, 189);
+    }
+}
+
+
+
+.hero-first-one{
+
+    display: flex;
+    gap: 20px;
+}
+
+
+/* summary */
+
+.right-summary-one{
+    background-color: hsl(228, 38%, 97%);
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.right-side-summary{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    h4{
+        font-size: 15px;
+    }
+
+    h2{
+        font-size: 14px;
+        font-weight: 500;
+        color: hsl(213, 96%, 18%) ;
+
+    }
+
+    h6{
+        margin: 0;
+    }
+    h3{
+        color: hsl(213, 96%, 18%) ;
+
+    }
+}
+
+.total{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+     h6{
+        margin: 0;
+     }
+
+     h3{
+        font-size: 22px;
+        color: blue;
+     }
+}

@@ -177,16 +177,20 @@ body{
         margin-top: 5px;
     }
 
-    h6{
-        display: none;
-        margin-top: 5px;
-        color: hsl(213, 96%, 18%);
-        font-weight: 500;
-
-    }
-
 
 }
+.yearly-plan{
+    display: none;
+    margin-top: 5px;
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+
+    h6{
+        margin-top: 8px;
+    }
+
+}
+
 
 .monthly-yearly-input{
     margin-top: 40px;

@@ -10,6 +10,39 @@ const inputname = document.querySelector(".input-name")
 const form = document.querySelector(".submitForm")
 const epostaerror = document.querySelector(".epostaError")
 const numbererror= document.querySelector(".numberError")
+const myRange = document.querySelector("#myRange")
+const yearlyPlans = document.querySelectorAll(".yearly-plan")
+const monthlyPlans = document.querySelectorAll(".monthly-plan")
+
+
+
+
+myRange.addEventListener("click",function(){
+    for (const yearlyPlan of yearlyPlans) {
+
+        if(myRange.value =="2"){
+
+            yearlyPlan.style.display="block"
+
+            for (const monthlyPlan of monthlyPlans) {
+
+                if(myRange.value =="2"){
+
+                    monthlyPlan.style.display="none"
+
+                }
+                else{
+                    monthlyPlan.style.display="block"
+                }
+
+            }  
+
+        }else{
+            yearlyPlan.style.display="none"
+        }  
+
+    }
+})
 
 form.addEventListener("submit",function(e){
     e.preventDefault();
@@ -44,7 +77,7 @@ form.addEventListener("submit",function(e){
 
 
 selectplan.addEventListener("click",function(){
-    console.log("kdjgfb");
+    // console.log("kdjgfb");
     rightsidesecond.style.display="none"
     rightsidefirst.style.display="block"
     rightsidethird.style.display="none"
@@ -52,7 +85,7 @@ selectplan.addEventListener("click",function(){
 })
 
 yourinfo.addEventListener("click",function(){
-    console.log("jsng");
+    // console.log("jsng");
     rightsidesecond.style.display="block"
     rightsidefirst.style.display="none"
     rightsidethird.style.display="none"
@@ -62,7 +95,7 @@ yourinfo.addEventListener("click",function(){
 })
 
 addons.addEventListener("click",function(){
-    console.log("rjgn");
+    // console.log("rjgn");
     rightsidethird.style.display="block"
     rightsidesecond.style.display="none"
     rightsidefirst.style.display="none"
@@ -71,7 +104,7 @@ addons.addEventListener("click",function(){
 })
 
 summary.addEventListener("click",function(){
-    console.log("sog");
+    // console.log("sog");
     rightsidethird.style.display="none"
     rightsidesecond.style.display="none"
     rightsidefirst.style.display="none"

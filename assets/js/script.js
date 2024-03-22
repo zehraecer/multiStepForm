@@ -8,17 +8,29 @@ const rightsidethird = document.querySelector(".right-side-third")
 const rightsidefourth = document.querySelector(".right-side-fourth")
 const inputname = document.querySelector(".input-name")
 const form = document.querySelector(".submitForm")
+const epostaerror = document.querySelector(".epostaError")
+const numbererror= document.querySelector(".numberError")
 
 form.addEventListener("submit",function(e){
     e.preventDefault();
     const name = form["input-name"].value
-    // console.log(name)
     const eposta = form["input-eposta"].value
-    // console.log(eposta);
     const number = form["input-number"].value
-    // console.log(number);
+     
+     if(!eposta.includes("@")){
+        epostaerror.style.display="block"
+     }
+     else{
+        epostaerror.style.display="none"
+     }
 
+     if(number.length > 11 || number.length < 11 || typeof number === "string"){
+        numbererror.style.display="block"
+     }
+     else{
+        numbererror.style.display="none"
 
+     }
 })
 
 

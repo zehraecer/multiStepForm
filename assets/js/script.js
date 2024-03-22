@@ -13,34 +13,42 @@ const numbererror= document.querySelector(".numberError")
 const myRange = document.querySelector("#myRange")
 const yearlyPlans = document.querySelectorAll(".yearly-plan")
 const monthlyPlans = document.querySelectorAll(".monthly-plan")
+const boxoneclicks = document.querySelectorAll(".box-one")
 
+for (const boxoneclick of boxoneclicks) {
+    boxoneclick.addEventListener("click",function(){
+        if(boxoneclick.classList.contains("active")){
+            boxoneclick.classList.remove("active")
+        }
+        else{
+            boxoneclick.classList.add("active")
+            
+        }
+    })
 
+    
+    
+}
 
 
 myRange.addEventListener("click",function(){
-    for (const yearlyPlan of yearlyPlans) {
-
-        if(myRange.value =="2"){
-
+    if(myRange.value =="2"){
+        for (const yearlyPlan of yearlyPlans) {
             yearlyPlan.style.display="block"
+        }
+        for (const monthlyPlan of monthlyPlans){
+            monthlyPlan.style.display="none"
 
-            for (const monthlyPlan of monthlyPlans) {
-
-                if(myRange.value =="2"){
-
-                    monthlyPlan.style.display="none"
-
-                }
-                else{
-                    monthlyPlan.style.display="block"
-                }
-
-            }  
-
-        }else{
-            yearlyPlan.style.display="none"
-        }  
-
+        }
+      
+    }
+    else{
+        for (const yearlyPlan of yearlyPlans) {
+            yearlyPlan.style.display = "none";
+        }
+        for (const monthlyPlan of monthlyPlans) {
+            monthlyPlan.style.display = "block";
+        }
     }
 })
 
@@ -57,7 +65,7 @@ form.addEventListener("submit",function(e){
         epostaerror.style.display="none"
      }
 
-     if(number.length > 11 || number.length < 11 || typeof number === "string"){
+     if(number.length > 11 || isNaN(number)){
         numbererror.style.display="block"
      }
      else{
@@ -65,14 +73,6 @@ form.addEventListener("submit",function(e){
 
      }
 })
-
-
-
-
-
-
-
-
 
 
 

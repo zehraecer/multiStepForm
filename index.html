@@ -16,7 +16,7 @@
         <div class="left-side">
            
            <div class="left-side-first">
-                 <a href="#">1</a>
+                 <a class="selectPlan" href="#">1</a>
 
                  <div class="left-side-first-text">
                      <h6>STEP 1</h6>
@@ -26,7 +26,7 @@
            </div>
 
            <div class="left-side-first">
-                <a  class="selectplan" href="#">2</a>
+                <a  class="yourinfo" href="#">2</a>
 
                 <div class="left-side-first-text">
                     <h6>STEP 2</h6>
@@ -63,20 +63,20 @@
 
         <div class="right-side">
               
-             <div class="right-side-first">
+             <div class="right-side-first  personal">
 
             <h4>Personal Info</h4>
             <h6>Please provide your name, email address, and phone number.</h6>
 
 
-            <form>
+            <form class="submitForm">
               
                 <div class="form-1">
                     <div class="form-1-text">
                         <p>Name</p>
                         <h5>This field is required</h5>
                     </div>
-                    <input type="text"   placeholder="e.g. Stephen King ">
+                    <input type="text" id="input-name" class="input-name"  placeholder="e.g. Stephen King">
                 </div>
 
                 <div class="form-1">
@@ -84,7 +84,7 @@
                         <p>Email Adress</p>
                         <h5>This field is required</h5>
                     </div>
-                    <input type="text" placeholder="e.g. stephenking@lorem.com ">
+                    <input type="text" id="input-eposta" class="input-eposta" placeholder="e.g. stephenking@lorem.com ">
                 </div>
 
                 <div class="form-1">
@@ -92,18 +92,17 @@
                         <p>Phone Number</p>
                         <h5>This field is required</h5>
                     </div>
-                    <input type="text" placeholder="e.g. +1 234 567 890">
+                    <input type="text" id="input-number" class="input-number" placeholder="e.g. +1 234 567 890">
                 </div>
                 
-
-            </form>
+                    
              
 
             </div>
 
 
 
-            <div class="right-side-second">
+            <div class="right-side-second personal">
                 
                 <h4>Select Your Plan</h4>
                 <h6>You have the option of monthly or yearly billing.</h6>
@@ -157,7 +156,7 @@
 
 
 
-        <div class="right-side-third">
+        <div class="right-side-third personal">
             <h4>Pick add-ons</h4>
             <h6>Add ons help enhance your gaming experience</h6>
 
@@ -210,7 +209,7 @@
 
 
 
-                <div class="right-side-fourth">
+                <div class="right-side-fourth personal">
             <h4>Finishing up</h4>
             <h6>Double-check everything looks Ok before confirming</h6>
 
@@ -245,13 +244,17 @@
                     </div>
 
                 </div>
+
+
+                
+                            <div class="next-btn">
+                                <button type="submit" href="#">Next Step</button>
+                            </div>
+
+                        </form>
         </div>
 
 
-
-            <div class="next-btn">
-                <a href="#">Next Step</a>
-            </div>
 
         </div>
 

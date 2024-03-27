@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi Step Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+
     <div class="container">
 
         <div class="left-side">
-           
-           <div class="left-side-first">
-                 <a class="selectPlan" href="#">1</a>
 
-                 <div class="left-side-first-text">
-                     <h6>STEP 1</h6>
-                     <h4>SELECT PLAN</h4>
-                 </div>
-                
-           </div>
+            <div class="left-side-first">
+                <a class="selectPlan" href="#">1</a>
 
-           <div class="left-side-first">
-                <a  class="yourinfo" href="#">2</a>
+                <div class="left-side-first-text">
+                    <h6>STEP 1</h6>
+                    <h4>SELECT PLAN</h4>
+                </div>
+
+            </div>
+
+            <div class="left-side-first">
+                <a class="yourinfo" href="#">2</a>
 
                 <div class="left-side-first-text">
                     <h6>STEP 2</h6>
                     <h4>YOUR INFO</h4>
                 </div>
-            
+
             </div>
 
 
@@ -43,7 +47,7 @@
                     <h6>STEP 3</h6>
                     <h4>ADD-ONS</h4>
                 </div>
-            
+
             </div>
 
 
@@ -54,7 +58,7 @@
                     <h6>STEP 4</h6>
                     <h4>SUMMARY</h4>
                 </div>
-            
+
             </div>
 
 
@@ -62,66 +66,68 @@
 
 
         <div class="right-side">
-              
-             <div class="right-side-first  personal">
 
-            <h4>Personal Info</h4>
-            <h6>Please provide your name, email address, and phone number.</h6>
+            <div class="right-side-first  personal">
+
+                <h4>Personal Info</h4>
+                <h6>Please provide your name, email address, and phone number.</h6>
 
 
-            <form class="submitForm">
-              
-                <div class="form-1">
-                    <div class="form-1-text">
-                        <p>Name</p>
-                        <h5>This field is required</h5>
+                <form class="submitForm">
+
+                    <div class="form-1">
+                        <div class="form-1-text">
+                            <p>Name</p>
+                            <h5>This field is required</h5>
+                        </div>
+                        <input type="text" id="input-name" class="input-name" placeholder="e.g. Stephen King">
                     </div>
-                    <input type="text" id="input-name" class="input-name"  placeholder="e.g. Stephen King">
-                </div>
 
-                <div class="form-1">
-                    <div class="form-1-text">
-                        <p>Email Adress</p>
-                        <h5 class="epostaError">This field is required</h5>
+                    <div class="form-1">
+                        <div class="form-1-text">
+                            <p>Email Adress</p>
+                            <h5 class="epostaError">This field is required</h5>
+                        </div>
+                        <input type="text" id="input-eposta" class="input-eposta"
+                            placeholder="e.g. stephenking@lorem.com ">
                     </div>
-                    <input type="text" id="input-eposta" class="input-eposta" placeholder="e.g. stephenking@lorem.com ">
-                </div>
 
-                <div class="form-1">
-                    <div class="form-1-text">
-                        <p>Phone Number</p>
-                        <h5 class="numberError">This field is required</h5>
+                    <div class="form-1">
+                        <div class="form-1-text">
+                            <p>Phone Number</p>
+                            <h5 class="numberError">This field is required</h5>
+                        </div>
+                        <input type="text" id="input-number" class="input-number" placeholder="e.g. +1 234 567 890">
                     </div>
-                    <input type="text" id="input-number" class="input-number" placeholder="e.g. +1 234 567 890">
-                </div>
-                
-                    
-             
+
+                    <div class="next-btn">
+                        <button type="submit" href="#">Next Step</button>
+                    </div>
+                </form>
+
 
             </div>
 
-
-
             <div class="right-side-second personal">
-                
+
                 <h4>Select Your Plan</h4>
                 <h6>You have the option of monthly or yearly billing.</h6>
 
 
                 <div class="box">
-                
+
                     <div class="box-one">
                         <img src="assets/img/icon-arcade.svg" alt="">
 
                         <div class="box-one-text">
                             <h4>Arcade</h4>
-                            <h5  class="monthly-plan">$9/mo</h5>
+                            <h5 class="monthly-plan">$9/mo</h5>
                             <div class="yearly-plan">
                                 <p>$90/yr</p>
                                 <h6>2 months free</h6>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <div class="box-one">
@@ -135,7 +141,7 @@
                                 <h6>2 months free</h6>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <div class="box-one">
@@ -143,132 +149,138 @@
 
                         <div class="box-one-text">
                             <h4>Arcade</h4>
-                            <h5  class="monthly-plan">$9/mo</h5>
+                            <h5 class="monthly-plan">$9/mo</h5>
                             <div class="yearly-plan">
                                 <p>$90/yr</p>
                                 <h6>2 months free</h6>
                             </div>
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
-                
+
 
                 <div class="monthly-yearly-input">
                     <h3>Monthly</h3>
-                    <input type="range" class="slider"  id="myRange" min="1" max="2" value="1">
+                    <input type="range" class="slider" id="myRange" min="1" max="2" value="1">
                     <h4>Yearly</h4>
                 </div>
 
+                <div class="next-btn">
+                    <button type="submit" href="#">Next Step</button>
+                </div>
             </div>
 
 
 
-        <div class="right-side-third personal">
-            <h4>Pick add-ons</h4>
-            <h6>Add ons help enhance your gaming experience</h6>
+            <div class="right-side-third personal">
+                <h4>Pick add-ons</h4>
+                <h6>Add ons help enhance your gaming experience</h6>
 
-            <div class="right-side-hero">
-                 
-                <div class="right-side-hero-first">
-                    
-                    <div class="hero-first-one">
-                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <div class="right-side-hero">
 
-                        <div class="hero-first-text">
-                            <h4>Online Service</h4>
-                            <h6>Access to multiplayer games </h6>
+                    <div class="right-side-hero-first">
+
+                        <div class="hero-first-one">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                            <div class="hero-first-text">
+                                <h4>Online Service</h4>
+                                <h6>Access to multiplayer games </h6>
+                            </div>
                         </div>
+                        <h5>+$1/mo</h5>
                     </div>
-                    <h5>+$1/mo</h5>
-                </div>
 
-                <div class="right-side-hero-first">
+                    <div class="right-side-hero-first">
 
-                    <div class="hero-first-one">
-                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <div class="hero-first-one">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
 
-                        <div class="hero-first-text">
-                            <h4>Larger Storage</h4>
-                            <h6>Extra 1TB of cloud save </h6>
+                            <div class="hero-first-text">
+                                <h4>Larger Storage</h4>
+                                <h6>Extra 1TB of cloud save </h6>
+                            </div>
                         </div>
+                        <h5>+$2/mo</h5>
                     </div>
-                    <h5>+$2/mo</h5>
+
+
+                    <div class="right-side-hero-first">
+
+                        <div class="hero-first-one">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                            <div class="hero-first-text">
+                                <h4>Customizable profile</h4>
+                                <h6>Custom theme on your profile</h6>
+                            </div>
+
+                        </div>
+                        <h5>+$2/mo</h5>
+                    </div>
+
                 </div>
-
-
-                <div class="right-side-hero-first">
-
-                     <div class="hero-first-one">
-                         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-
-                         <div class="hero-first-text">
-                             <h4>Customizable profile</h4>
-                             <h6>Custom theme on your profile</h6>
-                         </div>
-
-                     </div>
-                     <h5>+$2/mo</h5>
+                <div class="next-btn">
+                    <button type="submit" href="#">Next Step</button>
                 </div>
 
             </div>
 
-        </div>
 
 
+            <div class="right-side-fourth personal">
+                <h4>Finishing up</h4>
+                <h6>Double-check everything looks Ok before confirming</h6>
 
-                <div class="right-side-fourth personal">
-            <h4>Finishing up</h4>
-            <h6>Double-check everything looks Ok before confirming</h6>
 
+                <div class="right-summary-one">
 
-                    <div class="right-summary-one">
+                    <div class="right-side-summary">
 
-                            <div class="right-side-summary">
-
-                                <h4>Arcade (Monthly) </h4>
-                                <h3>$9/mo</h3>
-                            </div>
-
-                            <div class="right-side-summary">
-
-                                <h6>Online Service</h6>
-                                <h2>$1/mo</h2>
-                            </div>
-
-                            <div class="right-side-summary">
-
-                                <h6>Larger Storage</h6>
-                                <h2>$9/mo</h2>
-                            </div>
-
+                        <h4>Arcade (Monthly) </h4>
+                        <h3>$9/mo</h3>
                     </div>
 
+                    <div class="right-side-summary">
 
-                    <div class="total">
+                        <h6>Online Service</h6>
+                        <h2>$1/mo</h2>
+                    </div>
 
-                        <h6>Total (per month)</h6>
-                        <h3>$12/mo</h3>
+                    <div class="right-side-summary">
+
+                        <h6>Larger Storage</h6>
+                        <h2>$9/mo</h2>
                     </div>
 
                 </div>
 
 
-                
-                            <div class="next-btn">
-                                <button type="submit" href="#">Next Step</button>
-                            </div>
+                <div class="total">
 
-                        </form>
+                    <h6>Total (per month)</h6>
+                    <h3>$12/mo</h3>
+                </div>
+
+                <div class="next-btn">
+                    <button type="submit" href="#">Next Step</button>
+                </div>
+            </div>
+
+
+
+
         </div>
 
 
 
-        </div>
+    </div>
 
     </div>
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

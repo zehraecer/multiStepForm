@@ -9,40 +9,48 @@ const rightsidefourth = document.querySelector(".right-side-fourth")
 const inputname = document.querySelector(".input-name")
 const form = document.querySelector(".submitForm")
 const epostaerror = document.querySelector(".epostaError")
-const numbererror= document.querySelector(".numberError")
+const numbererror = document.querySelector(".numberError")
 const myRange = document.querySelector("#myRange")
 const yearlyPlans = document.querySelectorAll(".yearly-plan")
 const monthlyPlans = document.querySelectorAll(".monthly-plan")
 const boxoneclicks = document.querySelectorAll(".box-one")
 
+
+// nextbtn.addEventListener("click", function () {
+//     if (rightsidefirst.style.display = "block") {
+//         rightsidefirst.style.display = "none"
+//         rightsidesecond.style.display = "block"
+//     }
+// })
+
 for (const boxoneclick of boxoneclicks) {
-    boxoneclick.addEventListener("click",function(){
-        if(boxoneclick.classList.contains("active")){
+    boxoneclick.addEventListener("click", function () {
+        if (boxoneclick.classList.contains("active")) {
             boxoneclick.classList.remove("active")
         }
-        else{
+        else {
             boxoneclick.classList.add("active")
-            
+
         }
     })
 
-    
-    
+
+
 }
 
 
-myRange.addEventListener("click",function(){
-    if(myRange.value =="2"){
+myRange.addEventListener("click", function () {
+    if (myRange.value == "2") {
         for (const yearlyPlan of yearlyPlans) {
-            yearlyPlan.style.display="block"
+            yearlyPlan.style.display = "block"
         }
-        for (const monthlyPlan of monthlyPlans){
-            monthlyPlan.style.display="none"
+        for (const monthlyPlan of monthlyPlans) {
+            monthlyPlan.style.display = "none"
 
         }
-      
+
     }
-    else{
+    else {
         for (const yearlyPlan of yearlyPlans) {
             yearlyPlan.style.display = "none";
         }
@@ -52,63 +60,86 @@ myRange.addEventListener("click",function(){
     }
 })
 
-form.addEventListener("submit",function(e){
+form.addEventListener("submit", function (e) {
     e.preventDefault();
+    const nextbtn = document.querySelector(".next-btn")
+    if (nextBtn1()) {
+        console.log("dsjgfd");
+        nextbtn.addEventListener("click", function () {
+            if (rightsidefirst.style.display = "block") {
+                rightsidefirst.style.display = "none"
+                rightsidesecond.style.display = "block"
+            }
+        })
+    }
+    else {
+        console.log("dfgfdo");
+    }
+
+
+})
+
+
+function nextBtn1() {
     const name = form["input-name"].value
     const eposta = form["input-eposta"].value
     const number = form["input-number"].value
-     
-     if(!eposta.includes("@")){
-        epostaerror.style.display="block"
-     }
-     else{
-        epostaerror.style.display="none"
-     }
 
-     if(number.length > 11 || isNaN(number)){
-        numbererror.style.display="block"
-     }
-     else{
-        numbererror.style.display="none"
+    if (!eposta.includes("@")) {
+        epostaerror.style.display = "block"
+        return false;
+    }
+    else {
+        epostaerror.style.display = "none"
+    }
 
-     }
-})
+    if (number.length > 11 || isNaN(number)) {
+        numbererror.style.display = "block"
+        return false;
+    }
+    else {
+        numbererror.style.display = "none"
+
+    }
+    return true;
+}
 
 
 
-selectplan.addEventListener("click",function(){
+
+selectplan.addEventListener("click", function () {
     // console.log("kdjgfb");
-    rightsidesecond.style.display="none"
-    rightsidefirst.style.display="block"
-    rightsidethird.style.display="none"
-    rightsidefourth.style.display="none"
+    rightsidesecond.style.display = "none"
+    rightsidefirst.style.display = "block"
+    rightsidethird.style.display = "none"
+    rightsidefourth.style.display = "none"
 })
 
-yourinfo.addEventListener("click",function(){
+yourinfo.addEventListener("click", function () {
     // console.log("jsng");
-    rightsidesecond.style.display="block"
-    rightsidefirst.style.display="none"
-    rightsidethird.style.display="none"
-    rightsidefourth.style.display="none"
+    rightsidesecond.style.display = "block"
+    rightsidefirst.style.display = "none"
+    rightsidethird.style.display = "none"
+    rightsidefourth.style.display = "none"
 
 
 })
 
-addons.addEventListener("click",function(){
+addons.addEventListener("click", function () {
     // console.log("rjgn");
-    rightsidethird.style.display="block"
-    rightsidesecond.style.display="none"
-    rightsidefirst.style.display="none"
-    rightsidefourth.style.display="none"
+    rightsidethird.style.display = "block"
+    rightsidesecond.style.display = "none"
+    rightsidefirst.style.display = "none"
+    rightsidefourth.style.display = "none"
 
 })
 
-summary.addEventListener("click",function(){
+summary.addEventListener("click", function () {
     // console.log("sog");
-    rightsidethird.style.display="none"
-    rightsidesecond.style.display="none"
-    rightsidefirst.style.display="none"
-    rightsidefourth.style.display="block"
+    rightsidethird.style.display = "none"
+    rightsidesecond.style.display = "none"
+    rightsidefirst.style.display = "none"
+    rightsidefourth.style.display = "block"
 })
 
 

@@ -8,15 +8,17 @@ img {
     max-width: 100%;
 }
 
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
 
-body{
+body {
     font-family: "Ubuntu", sans-serif;
     background-color: hsl(217, 100%, 97%);
 }
 
-.container{
+.container {
     max-width: 900px;
     margin-inline: auto;
     padding: 16px;
@@ -25,12 +27,12 @@ body{
     grid-template-columns: repeat(2, 1fr);
     background-color: #fff;
     border-radius: 20px;
-    
-    
+
+
 }
 
 
-.left-side{
+.left-side {
     background-image: url("../img/bg-sidebar-desktop.svg");
     background-repeat: no-repeat;
     padding-top: 40px;
@@ -38,12 +40,12 @@ body{
     padding-bottom: 200px;
 }
 
-.left-side-first{
+.left-side-first {
     display: flex;
     gap: 40px;
     padding-top: 25px;
 
-    a{
+    a {
         padding: 17px;
         border-radius: 50%;
         background-color: transparent;
@@ -51,17 +53,17 @@ body{
         color: #fff;
         font-weight: 700;
         font-size: 25px;
-        
+
     }
-     
-    
-    h6{
+
+
+    h6 {
         color: lightgray;
         font-weight: 400;
         font-size: 15px;
     }
 
-    h4{
+    h4 {
         color: #fff;
         padding-top: 5px;
         font-weight: 600;
@@ -69,27 +71,27 @@ body{
     }
 }
 
-.left-side-first-text{
+.left-side-first-text {
     padding-top: 8px;
 }
 
 
-.left-side-first a:active{
+.left-side-first a:active {
     background-color: rgb(193, 219, 227);
     color: black;
 }
 
-.right-side{
+.right-side {
 
     padding-right: 50px;
 
-    h4{
+    h4 {
         font-weight: 600;
         font-size: 30px;
         color: hsl(213, 96%, 18%);
     }
 
-    h6{
+    h6 {
         font-weight: 400;
         font-size: 13px;
         color: hsl(227, 5%, 67%);
@@ -97,32 +99,33 @@ body{
 
     }
 
-    input[type="text"]{
+    input[type="text"] {
         width: 100%;
-        margin-top : 20px;
+        margin-top: 20px;
         padding: 10px;
         border: 1px solid lightgray;
         border-radius: 7px;
     }
 }
 
-.right-side input:active{
+.right-side input:active {
 
     border-color: blue
 }
-.form-1-text{
+
+.form-1-text {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
-    
 
-    p{
+
+    p {
         font-weight: 500;
         font-size: 12px;
         color: hsl(213, 96%, 18%);
     }
 
-    h5{
+    h5 {
         display: none;
         font-weight: 600;
         font-size: 12px;
@@ -132,20 +135,36 @@ body{
 }
 
 
-.next-btn{
+.btns {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     margin-top: 110px;
 
 }
-.next-btn button{
+
+.goBack-btn {
+    cursor: pointer;
+    padding: 15px 20px;
+    background-color: hsl(214, 33%, 96%);
+    font-weight: 700;
+    color: rgb(170, 159, 159);
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+
+
+}
+
+.next-btn {
     cursor: pointer;
     padding: 15px 20px;
     color: #fff;
-    background-color:hsl(213, 96%, 18%);
+    background-color: hsl(213, 96%, 18%);
     border-radius: 5px;
     font-weight: 500;
     font-size: 15px;
+    border: none;
+
 }
 
 
@@ -153,33 +172,36 @@ body{
 
 
 
-.box{
+.box {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 40px;
     gap: 10px;
-    
+
 }
-.box-one{
+
+.box-one {
     padding: 15px 0px 15px 10px;
     border: 1px solid hsl(229, 23%, 86%);
     border-radius: 10px;
     cursor: pointer;
 
 }
-.box-one-text{
+
+.box-one-text {
     margin-top: 30px;
 
-    h4{
-    font-size: 15px;
+    h4 {
+        font-size: 15px;
     }
 
-    p{
+    p {
         color: hsl(231, 11%, 63%);
         font-size: 13px;
         margin-top: 5px;
     }
-    h5{
+
+    h5 {
         color: hsl(231, 11%, 63%);
         margin-top: 5px;
         font-weight: 500;
@@ -189,20 +211,21 @@ body{
 .box-one.active {
     border: 1px solid blue;
 }
-.yearly-plan{
+
+.yearly-plan {
     display: none;
     margin-top: 5px;
     color: hsl(213, 96%, 18%);
     font-weight: 500;
 
-    h6{
+    h6 {
         margin-top: 8px;
     }
 
 }
 
 
-.monthly-yearly-input{
+.monthly-yearly-input {
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -211,13 +234,13 @@ body{
     background-color: hsl(228, 38%, 97%);
     border-radius: 5px;
 
-    h3{
+    h3 {
         font-size: 14px;
         color: hsl(231, 11%, 63%);
 
     }
 
-    h4{
+    h4 {
 
         font-size: 14px;
     }
@@ -225,10 +248,10 @@ body{
 
 
 
-input[type="range"]{
+input[type="range"] {
     width: 48px;
     height: 24px;
-    appearance: none; 
+    appearance: none;
     border-radius: 13px;
     color: hsl(213, 96%, 18%);
     padding-left: 5px;
@@ -240,10 +263,10 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 14px;
-    height: 14px; 
+    height: 14px;
     border-radius: 50%;
     cursor: pointer;
-    background:#5964E0;
+    background: #5964E0;
 
 }
 
@@ -253,24 +276,24 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 
-.right-side-hero-first{
+.right-side-hero-first {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    padding: 25px 15px ;
+    padding: 25px 15px;
     border: 1px solid hsl(229, 23%, 86%);
     border-radius: 12px;
 
 
-    h4{
+    h4 {
         font-size: 16px;
     }
 
-    h6{
+    h6 {
         margin: 0;
     }
 
-    h5{
+    h5 {
 
         color: rgb(140, 25, 189);
     }
@@ -278,7 +301,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 
-.hero-first-one{
+.hero-first-one {
 
     display: flex;
     gap: 20px;
@@ -289,60 +312,61 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 
-.right-summary-one{
+.right-summary-one {
     background-color: hsl(228, 38%, 97%);
     margin-top: 20px;
     padding: 15px;
 }
 
-.right-side-summary{
+.right-side-summary {
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
 
-    h4{
+    h4 {
         font-size: 15px;
     }
 
-    h2{
+    h2 {
         font-size: 14px;
         font-weight: 500;
-        color: hsl(213, 96%, 18%) ;
+        color: hsl(213, 96%, 18%);
 
     }
 
-    h6{
+    h6 {
         margin: 0;
     }
-    h3{
-        color: hsl(213, 96%, 18%) ;
+
+    h3 {
+        color: hsl(213, 96%, 18%);
 
     }
 }
 
-.total{
+.total {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
-    
-     h6{
-        margin: 0;
-     }
 
-     h3{
+    h6 {
+        margin: 0;
+    }
+
+    h3 {
         font-size: 22px;
         color: blue;
-     }
+    }
 }
 
-.right-side-second{
+.right-side-second {
     display: none;
 }
 
-.right-side-third{
+.right-side-third {
     display: none;
 }
 
-.right-side-fourth{
+.right-side-fourth {
     display: none;
 }

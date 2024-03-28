@@ -18,6 +18,36 @@ const nexbtnone = document.querySelector(".next-btn-one")
 const nexbtntwo = document.querySelector(".next-btn-two")
 const nexbtnthree = document.querySelector(".next-btn-three")
 const nexbtnfour = document.querySelector(".next-btn-four")
+const gobackbtnone = document.querySelector(".goBack-btn-one")
+const gobackbtntwo = document.querySelector(".goBack-btn-two")
+const gobackbtnthere = document.querySelector(".goBack-btn-three")
+
+
+gobackbtnone.addEventListener("click", function () {
+    console.log("ksjfbd");
+    if (rightsidesecond.style.display = "block") {
+        rightsidesecond.style.display = "none"
+        rightsidefirst.style.display = "block"
+    }
+})
+
+gobackbtntwo.addEventListener("click", function () {
+    console.log("ksjfbd");
+    if (rightsidethird.style.display = "block") {
+        rightsidethird.style.display = "none"
+        rightsidesecond.style.display = "block"
+    }
+})
+
+gobackbtnthere.addEventListener("click", function () {
+    if (rightsidefourth.style.display = "block") {
+        rightsidefourth.style.display = "none"
+        rightsidethird.style.display = "block"
+    }
+})
+
+
+
 
 nexbtntwo.addEventListener("click", function () {
     if (rightsidesecond.style.display = "block") {

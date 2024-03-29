@@ -46,6 +46,7 @@ body {
     padding-top: 25px;
 
     a {
+        font-family: "Ubuntu";
         padding: 17px;
         border-radius: 50%;
         background-color: transparent;
@@ -58,12 +59,14 @@ body {
 
 
     h6 {
+        font-family: "Ubuntu";
         color: lightgray;
         font-weight: 400;
         font-size: 15px;
     }
 
     h4 {
+        font-family: "Ubuntu";
         color: #fff;
         padding-top: 5px;
         font-weight: 600;
@@ -86,12 +89,14 @@ body {
     padding-right: 50px;
 
     h4 {
+        font-family: "Ubuntu";
         font-weight: 600;
         font-size: 30px;
         color: hsl(213, 96%, 18%);
     }
 
     h6 {
+        font-family: "Ubuntu";
         font-weight: 400;
         font-size: 13px;
         color: hsl(227, 5%, 67%);
@@ -120,12 +125,14 @@ body {
 
 
     p {
+        font-family: "Ubuntu";
         font-weight: 500;
         font-size: 12px;
         color: hsl(213, 96%, 18%);
     }
 
     h5 {
+        font-family: "Ubuntu";
         display: none;
         font-weight: 600;
         font-size: 12px;
@@ -149,6 +156,7 @@ body {
 }
 
 .goBack-btn {
+    font-family: "Ubuntu";
     cursor: pointer;
     padding: 15px 20px;
     background-color: hsl(214, 33%, 96%);
@@ -162,6 +170,7 @@ body {
 }
 
 .next-btn {
+    font-family: "Ubuntu";
     cursor: pointer;
     padding: 15px 20px;
     color: #fff;
@@ -171,6 +180,10 @@ body {
     font-size: 15px;
     border: none;
 
+}
+
+.confirm-btn {
+    background-color: blue;
 }
 
 
@@ -241,6 +254,7 @@ body {
     border-radius: 5px;
 
     h3 {
+        font-family: "Ubuntu";
         font-size: 14px;
         color: hsl(231, 11%, 63%);
 
@@ -334,6 +348,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     h2 {
+        font-family: "Ubuntu";
         font-size: 14px;
         font-weight: 500;
         color: hsl(213, 96%, 18%);
@@ -375,4 +390,26 @@ input[type="range"]::-webkit-slider-thumb {
 
 .right-side-fourth {
     display: none;
+}
+
+.right-side-confirm {
+    display: none;
+    text-align: center;
+
+
+    img {
+        margin-inline: auto;
+        margin-top: 150px;
+
+    }
+
+    h4 {
+        margin-top: 20px;
+    }
+
+    h6 {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 15px;
+    }
 }

@@ -21,6 +21,16 @@ const nexbtnfour = document.querySelector(".next-btn-four")
 const gobackbtnone = document.querySelector(".goBack-btn-one")
 const gobackbtntwo = document.querySelector(".goBack-btn-two")
 const gobackbtnthere = document.querySelector(".goBack-btn-three")
+const confirmbtn = document.querySelector(".confirm-btn")
+const rightsideconfirm = document.querySelector(".right-side-confirm")
+
+confirmbtn.addEventListener("click", function () {
+    console.log("skfgb");
+    if (rightsidefourth.style.display = "block") {
+        rightsidefourth.style.display = "none"
+        rightsideconfirm.style.display = "block"
+    }
+})
 
 
 gobackbtnone.addEventListener("click", function () {
@@ -99,8 +109,6 @@ for (const boxoneclick of boxoneclicks) {
         }
     })
 
-
-
 }
 
 
@@ -169,10 +177,15 @@ function nextBtn1() {
         numbererror.style.display = "none"
 
     }
+
+    localStorage.setItem('name', name);
+    localStorage.setItem('eposta', eposta);
+    localStorage.setItem('number', number);
     return true;
 }
 
-
+const x = localStorage.getItem('name');;
+console.log(x);
 
 
 
@@ -183,6 +196,8 @@ function changePage() {
         rightsidefirst.style.display = "block"
         rightsidethird.style.display = "none"
         rightsidefourth.style.display = "none"
+        rightsideconfirm.style.display = "none"
+
     })
 
     yourinfo.addEventListener("click", function () {
@@ -191,6 +206,8 @@ function changePage() {
         rightsidefirst.style.display = "none"
         rightsidethird.style.display = "none"
         rightsidefourth.style.display = "none"
+        rightsideconfirm.style.display = "none"
+
         selectPlans()
 
     })
@@ -201,6 +218,8 @@ function changePage() {
         rightsidesecond.style.display = "none"
         rightsidefirst.style.display = "none"
         rightsidefourth.style.display = "none"
+        rightsideconfirm.style.display = "none"
+
 
     })
 
@@ -210,6 +229,8 @@ function changePage() {
         rightsidesecond.style.display = "none"
         rightsidefirst.style.display = "none"
         rightsidefourth.style.display = "block"
+        rightsideconfirm.style.display = "none"
+
     })
 
 
@@ -219,9 +240,6 @@ function changePage() {
 
 changePage()
 // nextBtnRender()
-
-
-
 
 
 

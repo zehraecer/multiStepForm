@@ -112,28 +112,26 @@ for (const boxoneclick of boxoneclicks) {
 }
 
 
-function selectPlans() {
-    myRange.addEventListener("click", function () {
-        if (myRange.value == "2") {
-            for (const yearlyPlan of yearlyPlans) {
-                yearlyPlan.style.display = "block"
-            }
-            for (const monthlyPlan of monthlyPlans) {
-                monthlyPlan.style.display = "none"
-
-            }
+myRange.addEventListener("click", function () {
+    if (myRange.value == "2") {
+        for (const yearlyPlan of yearlyPlans) {
+            yearlyPlan.style.display = "block"
+        }
+        for (const monthlyPlan of monthlyPlans) {
+            monthlyPlan.style.display = "none"
 
         }
-        else {
-            for (const yearlyPlan of yearlyPlans) {
-                yearlyPlan.style.display = "none";
-            }
-            for (const monthlyPlan of monthlyPlans) {
-                monthlyPlan.style.display = "block";
-            }
+
+    }
+    else {
+        for (const yearlyPlan of yearlyPlans) {
+            yearlyPlan.style.display = "none";
         }
-    })
-}
+        for (const monthlyPlan of monthlyPlans) {
+            monthlyPlan.style.display = "block";
+        }
+    }
+})
 
 
 
@@ -208,7 +206,6 @@ function changePage() {
         rightsidefourth.style.display = "none"
         rightsideconfirm.style.display = "none"
 
-        selectPlans()
 
     })
 
